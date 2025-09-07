@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mental Health Awareness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <header>
+    <h1>💚 Mental Health Awareness</h1>
+    <button id="themeToggle">🌞 Toggle Dark/Light Mode</button>
+  </header>
+
+  <!-- Part 1: Event Handling -->
+  <section class="events">
+    <h2>Stay Positive</h2>
+    <button id="clickBtn">Click for a Positive Message</button>
+    <p id="hoverText">Hover over me for encouragement</p>
+    <input type="text" id="keyInput" placeholder="Type how you feel today..." />
+    <div id="message"></div>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section class="interactive">
+    <h2>Positive Affirmations Counter</h2>
+    <button id="counterBtn">Affirmations Said: 0</button>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <button class="faq-question">Why is mental health important?</button>
+      <p class="faq-answer">Because it affects how we think, feel, and act in daily life.</p>
+
+      <button class="faq-question">What are some self-care tips?</button>
+      <p class="faq-answer">Sleep well, eat balanced meals, exercise, and talk to loved ones.</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section class="form-section">
+    <h2>📝 Mental Health Check-In</h2>
+    <form id="checkinForm">
+      <label>Name: <input type="text" id="name"></label>
+      <span class="error" id="nameError"></span><br><br>
+
+      <label>Email: <input type="email" id="email"></label>
+      <span class="error" id="emailError"></span><br><br>
+
+      <label>Mood (1–10): <input type="number" id="mood" min="1" max="10"></label>
+      <span class="error" id="moodError"></span><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
